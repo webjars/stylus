@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>stylus</artifactId>
-    <version>0.49.4-SNAPSHOT</version>
+    <version>0.50.0-SNAPSHOT</version>
     <name>stylus</name>
     <description>WebJar for stylus</description>
     <url>http://webjars.org</url>
@@ -40,7 +40,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstreamVersion>0.49.3</upstreamVersion>
+        <upstreamVersion>0.50.0</upstreamVersion>
         <upstream.url>https://github.com/LearnBoost/stylus</upstream.url>
         <extractDir>${project.build.directory}/stylus-${upstreamVersion}</extractDir>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
@@ -97,13 +97,13 @@
                         </goals>
                         <configuration>
                             <target>
-                                <echo message="unzip archive" />
-                                <unzip src="${project.build.directory}/${upstreamVersion}.zip" dest="${project.build.directory}" />
+                                <echo message="unzip archive"/>
+                                <unzip src="${project.build.directory}/${upstreamVersion}.zip" dest="${project.build.directory}"/>
 
-                                <echo message="moving resources" />
-                                <move file="${extractDir}/package.json" toDir="${destDir}" />
-                                <move file="${extractDir}/index.js" toDir="${destDir}" />
-                                <move file="${extractDir}/lib" toDir="${destDir}" />
+                                <echo message="moving resources"/>
+                                <move file="${extractDir}/package.json" toDir="${destDir}"/>
+                                <move file="${extractDir}/index.js" toDir="${destDir}"/>
+                                <move file="${extractDir}/lib" toDir="${destDir}"/>
                             </target>
                         </configuration>
                     </execution>
@@ -119,7 +119,7 @@
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.5.1</version>
+                <version>1.6.5</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>sonatype-nexus-staging</serverId>
