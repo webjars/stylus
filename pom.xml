@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>stylus</artifactId>
-    <version>0.50.1-SNAPSHOT</version>
+    <version>0.51.1-SNAPSHOT</version>
     <name>stylus</name>
     <description>WebJar for stylus</description>
     <url>http://webjars.org</url>
@@ -19,7 +19,7 @@
     <licenses>
         <license>
             <name>MIT</name>
-            <url>https://github.com/LearnBoost/stylus/blob/master/LICENSE</url>
+            <url>https://github.com/stylus/stylus/blob/master/LICENSE</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -40,8 +40,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstreamVersion>0.50.0</upstreamVersion>
-        <upstream.url>https://github.com/LearnBoost/stylus</upstream.url>
+        <upstreamVersion>0.51.1</upstreamVersion>
+        <upstream.url>https://github.com/stylus/stylus</upstream.url>
         <extractDir>${project.build.directory}/stylus-${upstreamVersion}</extractDir>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
     </properties>
